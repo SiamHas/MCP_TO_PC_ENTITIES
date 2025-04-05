@@ -21,7 +21,26 @@ A MCP (Machine Communication Protocol) project that enables querying DNO APIs to
    DNO_TOKEN_KEY=your_secret_key
    ```
 4. Configure in Claude Desktop:
-   Add the following to your Claude Desktop configuration:
+   - Download Claude Desktop from [Claude Desktop Downloads](https://claude.ai/desktop)
+   - Configuration file location:
+     - macOS: `~/Library/Application Support/Claude Desktop/config.json`
+       ```bash
+       # Open with VS Code
+       code ~/Library/Application\ Support/Claude\ Desktop/config.json
+       # Or with any text editor
+       open -t ~/Library/Application\ Support/Claude\ Desktop/config.json
+       ```
+     - Windows: `%APPDATA%\Claude Desktop\config.json`
+       ```cmd
+       notepad %APPDATA%\Claude Desktop\config.json
+       ```
+     - Linux: `~/.config/Claude Desktop/config.json`
+       ```bash
+       # Open with your default editor
+       xdg-open ~/.config/Claude\ Desktop/config.json
+       ```
+   
+   Add the following to your Claude Desktop configuration file:
    ```json
    {
      "mcpServers": {
