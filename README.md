@@ -12,7 +12,11 @@ A MCP (Machine Communication Protocol) project that enables querying DNO APIs to
 1. Clone the repository
 2. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   # Install uv package manager (macOS)
+   brew install uv
+   
+   # Install project dependencies using uv
+   uv pip install -r requirements.txt
    ```
 3. Create a `.env` file with the following variables:
    ```
